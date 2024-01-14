@@ -1,0 +1,38 @@
+<%- include('partials/header') %>
+
+<div class="container">
+  <form action="/resume">
+    <h1><%= nameOfPerson %></h1>
+    <div class="line">
+      <p><i class="fa fa-phone"></i> <%= phoneNumber %></p>
+      <p><i class="fa fa-envelope"></i> <%= email %></p>
+      <p><i class="fa fa-linkedin-square"></i> <%= linkedin %></p>
+    </div>
+    <hr />
+    <p><%= about %></p>
+    <div class="title">
+      <h3>Education</h3>
+      <hr />
+    </div>
+    <div class="ed-details">
+      <h4><%= collegeName %></h4>
+      <p><i><%= degree %></i> - Current CGPA : <%= cgpa %></p>
+    </div>
+    <div class="ed-details">
+        <h4><%= seniorSchool %></h4>
+        <p>Percentage/CGPA : <%= seniorPer %></p>
+      </div>
+      <div class="ed-details">
+        <h4><%= highSchool %></h4>
+        <p>Percentage/CGPA : <%= highPer %></p>
+      </div>
+  </form>
+</div>
+
+<div class="download-container">
+  <button class="download-button">
+    <i class="fa fa-download"></i> Download
+  </button>
+</div>
+
+<%- include('partials/footer') %>

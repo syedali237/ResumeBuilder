@@ -1,48 +1,55 @@
 <%- include('partials/header') %>
 
 <div class="container">
-    <form>
+    <form method="POST">
         <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="Your Name">
+        <input type="text" id="name" name="names" placeholder="Your Name">
 
         <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" placeholder="Your Phone Number">
+        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
 
         <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Your Email">
+        <input type="email" id="email" name="email" placeholder="Your Email">
 
         <label for="linkedin">LinkedIn Link:</label>
-        <input type="text" id="linkedin" placeholder="Your LinkedIn Link">
+        <input type="text" id="linkedin" name="linkedin" placeholder="Your LinkedIn Link">
 
         <label for="about">About:</label>
-        <textarea id="about" placeholder="About yourself"></textarea>
+        <input type="text" id="about" maxlength="463" name="about" placeholder="About yourself">
 
         <label for="education-college">Education (College):</label>
-        <input type="text" id="education-college" placeholder="College Name">
+        <input type="text" id="education-college" name="collegeName" placeholder="College Name">
+        <input type="text" id="education-college" name="degree" placeholder="Degree Name">
+        <input type="text" id="education-college" name="cgpa" placeholder="Current CGPA">
 
         <label for="education-12th">Education (12th):</label>
-        <input type="text" id="education-12th" placeholder="12th School Name">
+        <input type="text" id="education-12th" name="seniorSchool" placeholder="12th School Name">
+        <input type="text" id="education-12th" name="seniorPer" placeholder="Percentage/CGPA">
 
         <label for="education-10th">Education (10th):</label>
-        <input type="text" id="education-10th" placeholder="10th School Name">
+        <input type="text" id="education-10th" name="highSchool" placeholder="10th School Name">
+        <input type="text" id="education-10th" name="highPer" placeholder="Percentage/CGPA">
 
         <label for="skills">Skills:</label>
-        <input type="text" id="skills" placeholder="Your Skills">
+        <input type="text" id="skills" placeholder="Add Skills">
 
         <label for="project1">Project 1:</label>
-        <input type="text" id="project1" placeholder="Project 1">
+        <input type="text" id="project1" placeholder="Title">
+        <input type="text" id="project1" placeholder="Description">
 
         <label for="project2">Project 2:</label>
-        <input type="text" id="project2" placeholder="Project 2">
+        <input type="text" id="project2" placeholder="Title">
+        <input type="text" id="project2" placeholder="Description">
 
         <label for="project3">Project 3:</label>
-        <input type="text" id="project3" placeholder="Project 3">
+        <input type="text" id="project3" placeholder="Title">
+        <input type="text" id="project3" placeholder="Description">
 
         <label for="extra-curricular">Extra Curricular:</label>
-        <textarea id="extra-curricular" placeholder="Your Extra Curricular Activities"></textarea>
+        <input type="text" id="extra-curricular" placeholder="Write as : 1. ...">
 
         <label for="achievements">Achievements:</label>
-        <textarea id="achievements" placeholder="Your Achievements"></textarea>
+        <input type="text" id="achievements" placeholder="Write as : 1. ...">
 
         <input type="submit" value="Submit">
     </form>

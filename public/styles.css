@@ -41,3 +41,67 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049;
 }
+
+.download-container {
+    text-align: center;
+}
+
+.download-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a3cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-button:hover{
+    background-color: #3258f0;
+}
+
+.container h1{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+}
+
+.line p {
+    display: inline-block;
+    margin: 0; 
+    margin-right: 25px; 
+}
+
+.title{
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.title hr{
+    display: inline-block;
+    width: 90%;
+    margin: 0;
+    position: absolute;
+    bottom: 8px;
+}
+
+
+.title h3 {
+    display: inline; 
+    margin-right: 5px; 
+}
+
+.ed-details{
+    margin:0;
+}
+
+.ed-details h4{
+    margin: 0;
+    margin-bottom: -5px;
+}

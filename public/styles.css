@@ -80,6 +80,7 @@ input[type="submit"]:hover {
 
 .title{
     position: relative;
+    margin-top: -8px;
     margin-bottom: 5px;
 }
 
@@ -92,16 +93,37 @@ input[type="submit"]:hover {
 }
 
 
-.title h3 {
+.title h2 {
     display: inline; 
     margin-right: 5px; 
 }
 
 .ed-details{
     margin:0;
+    margin-bottom: 10px;
 }
 
 .ed-details h4{
     margin: 0;
     margin-bottom: -5px;
+}
+
+.ed-details p{
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: -3px;
+}
+
+.skill{
+    display: flex;
+    align-items: center;
+}
+
+#skills {
+    margin-right: 8px;
+}
+
+.skill button{
+    padding: 8px;
+    margin-top: -15px;
 }

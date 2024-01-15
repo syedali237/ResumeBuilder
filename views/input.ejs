@@ -19,19 +19,26 @@
 
         <label for="education-college">Education (College):</label>
         <input type="text" id="education-college" name="collegeName" placeholder="College Name">
-        <input type="text" id="education-college" name="degree" placeholder="Degree Name">
+        <input type="text" id="education-college" name="degree" placeholder="Course Name/Specialization">
         <input type="text" id="education-college" name="cgpa" placeholder="Current CGPA">
 
         <label for="education-12th">Education (12th):</label>
         <input type="text" id="education-12th" name="seniorSchool" placeholder="12th School Name">
+        <input type="text" id="education-12th" name="seniorCourse" placeholder="Course Name/Board">
         <input type="text" id="education-12th" name="seniorPer" placeholder="Percentage/CGPA">
 
         <label for="education-10th">Education (10th):</label>
         <input type="text" id="education-10th" name="highSchool" placeholder="10th School Name">
+        <input type="text" id="education-10th" name="highCourse" placeholder="Course Name/Board">
         <input type="text" id="education-10th" name="highPer" placeholder="Percentage/CGPA">
 
         <label for="skills">Skills:</label>
-        <input type="text" id="skills" placeholder="Add Skills">
+        <div class="skill">
+        <input type="text" id="skills" name="skill" placeholder="Add Skills"><button type="submit" name="addSkill">+</button>
+        </div>
+        <% userSkills.forEach(element => { %>
+            <p> <%= element %></p>
+        <% }); %>
 
         <label for="project1">Project 1:</label>
         <input type="text" id="project1" placeholder="Title">
@@ -51,7 +58,7 @@
         <label for="achievements">Achievements:</label>
         <input type="text" id="achievements" placeholder="Write as : 1. ...">
 
-        <input type="submit" value="Submit">
+        <input type="submit" name="submitButton" value="Submit">
     </form>
 </div>
 

@@ -11,8 +11,12 @@ app.set('view engine', 'ejs');
 
 const formData = {};
 
+var skills = ["Skill Section"];
+
 app.get("/" , (req,res)=>{
-    res.render("input");
+    res.render("input", {
+        userSkills : skills
+    });
 })
 
 app.get("/resume" , (req,res)=>{
@@ -29,10 +33,18 @@ app.post("/" , (req,res) =>{
     formData.degree = req.body.degree;
     formData.cgpa = req.body.cgpa;
     formData.seniorSchool = req.body.seniorSchool;
+    formData.seniorCourse = req.body.seniorCourse;
     formData.seniorPer = req.body.seniorPer;
     formData.highSchool = req.body.highSchool;
+    formData.highCourse = req.body.highCourse;
     formData.highPer = req.body.highPer;
     console.log(formData);
+    if (req.body.skill){
+        var newSkill = req.body.skill;
+        console.log(newSkill);
+        skills.push(newSkill);
+        res.redirect("/");
+    } else if (req.body.submitButton){
     res.render("main" , {
         nameOfPerson : formData.name,
         phoneNumber : formData.phone,
@@ -43,10 +55,13 @@ app.post("/" , (req,res) =>{
         degree : formData.degree,
         cgpa : formData.cgpa,
         seniorSchool : formData.seniorSchool,
+        seniorCourse : formData.seniorCourse,
         seniorPer : formData.seniorPer,
         highSchool : formData.highSchool,
-        highPer : formData.highPer
-    })
+        highCourse : formData.highCourse,
+        highPer : formData.highPer,
+        skillSection : skills
+    })}
 })
 
 app.listen(port , ()=> {

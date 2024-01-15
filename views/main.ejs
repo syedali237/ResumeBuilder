@@ -11,21 +11,25 @@
     <hr />
     <p><%= about %></p>
     <div class="title">
-      <h3>Education</h3>
+      <h2>Education</h2>
       <hr />
     </div>
     <div class="ed-details">
       <h4><%= collegeName %></h4>
-      <p><i><%= degree %></i> - Current CGPA : <%= cgpa %></p>
+      <p><i><%= degree %></i></p>
+      <p>Current CGPA : <%= cgpa %></p>
     </div>
     <div class="ed-details">
         <h4><%= seniorSchool %></h4>
+        <p><i><%= seniorCourse %></i></p>
         <p>Percentage/CGPA : <%= seniorPer %></p>
       </div>
       <div class="ed-details">
         <h4><%= highSchool %></h4>
+        <p><i><%= highCourse %></i></p>
         <p>Percentage/CGPA : <%= highPer %></p>
       </div>
+      <p><%= skillSection %></p>
   </form>
 </div>
 
